@@ -1,1 +1,5 @@
 /* give your assignment a fun background color */
+body {
+    background-color: rgb(95, 106, 201);
+    margin: 0;
+  }
