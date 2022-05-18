@@ -36,11 +36,11 @@ console.log(supplyChanges);
 console.log('6. Showing supplyChanges...');
 for (let x=0; x<=supplyChanges.length-1; x++) {
     if (supplyChanges[x] > 0) {
-        console.log('Added ' + supplyChanges[x] + ' parts.');
+        console.log('Added ' , supplyChanges[x], ' parts.');
       } else if (supplyChanges[x] === 0) {
         console.log('No Change.');
       } else if (supplyChanges[x] < 0) {
-        console.log('Removed ' + supplyChanges[x] + ' parts.');
+        console.log('Removed ' , supplyChanges[x], ' parts.');
     } 
 }
 
@@ -50,11 +50,11 @@ console.log('---  Stretch Goals  ---');
 console.log('7. Showing supplyChanges with "for of" loop');
 for (n of supplyChanges) {
     if (n > 0) {
-            console.log('Added ' + n + ' parts.');
+            console.log('Added ' , n, ' parts.');
         } else if (n === 0) {
             console.log('No Change.');
         } else if (n < 0) {
-            console.log('Removed ' + n + ' parts.');
+            console.log('Removed ' , n, ' parts.');
     } 
 }
 
@@ -78,10 +78,10 @@ let totalParts = 572;
 const maxParts = 7;
 let boxes = 0;
 while (totalParts > maxParts) {
-   totalParts-=maxParts; 
+   totalParts -= maxParts; 
    boxes += 1;
 }
 console.log(boxes);
-console.log('Filled ' + boxes + ' boxes.');
+console.log(`Filled ${boxes} boxes.`);
 console.log(totalParts);
-console.log(totalParts + ' left over parts.');
+console.log(`${totalParts} left over parts.`);
